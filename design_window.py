@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'D:\projectsPy\RGR3\disain.ui'
+# Form implementation generated from reading ui file 'D:\projectsPy\RGR3_git\RGR3\design.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -35,15 +35,15 @@ class Ui_MainWindow(object):
         font.setPointSize(14)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
-        self.func_g = QtWidgets.QComboBox(self.centralwidget)
-        self.func_g.setGeometry(QtCore.QRect(480, 180, 261, 41))
+        self.myfunc_g = QtWidgets.QComboBox(self.centralwidget)
+        self.myfunc_g.setGeometry(QtCore.QRect(480, 180, 261, 41))
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.func_g.setFont(font)
-        self.func_g.setObjectName("func_g")
-        self.func_g.addItem("")
-        self.func_g.addItem("")
-        self.func_g.addItem("")
+        self.myfunc_g.setFont(font)
+        self.myfunc_g.setObjectName("myfunc_g")
+        self.myfunc_g.addItem("")
+        self.myfunc_g.addItem("")
+        self.myfunc_g.addItem("")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(20, 280, 331, 31))
         font = QtGui.QFont()
@@ -85,9 +85,9 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label.setText(_translate("MainWindow", "Введите числа через пробел:"))
         self.label_2.setText(_translate("MainWindow", "Выберете функцию g(X):"))
-        self.func_g.setItemText(0, _translate("MainWindow", "log(x)"))
-        self.func_g.setItemText(1, _translate("MainWindow", "2^x"))
-        self.func_g.setItemText(2, _translate("MainWindow", "e^x"))
+        self.myfunc_g.setItemText(0, _translate("MainWindow", "log(x)"))
+        self.myfunc_g.setItemText(1, _translate("MainWindow", "2^x"))
+        self.myfunc_g.setItemText(2, _translate("MainWindow", "e^x"))
         self.label_3.setText(_translate("MainWindow", "Cреднее значение функции Y"))
         self.label_4.setText(_translate("MainWindow", "Дисперсия функции Y"))
         self.decide.setText(_translate("MainWindow", "Решить"))
