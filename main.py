@@ -17,3 +17,13 @@ def main():
 
 if __name__ == '__main__':  
     main()  
+
+
+
+def get_avg(mylist):  # Считает среднее значения mylist
+    return sum(mylist) / len(mylist)
+
+def get_dispersia(mylist):  # Считает дисперсию mylist
+    avg = get_avg(mylist)
+    cko = [(item - avg)**2 for item in mylist]
+    return sum(cko) / len(cko)
