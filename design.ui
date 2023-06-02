@@ -65,7 +65,7 @@
      <string>Выберете функцию g(X):</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="func_g">
+   <widget class="QComboBox" name="myfunc_g">
     <property name="geometry">
      <rect>
       <x>480</x>
