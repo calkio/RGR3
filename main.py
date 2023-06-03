@@ -14,7 +14,7 @@ class ExampleApp(QtWidgets.QMainWindow, design_window.Ui_MainWindow):
         self.decide.clicked.connect(self.click_button)
         
     def click_button(self):  # Нажатие на копку "Решить"
-        text = self.input_value.toPlainText()
+        text = self.input_value.toPlainText().split(' ')  # Забрали текст из texbox и рапарсили по пробелам
 
 
 
@@ -22,7 +22,7 @@ class ExampleApp(QtWidgets.QMainWindow, design_window.Ui_MainWindow):
         return sum(mylist) / len(mylist)
 
     def get_dispersia(mylist):  # Считает дисперсию mylist
-        avg = get_avg(mylist)
+        avg = sum(mylist) / len(mylist)
         cko = [(item - avg)**2 for item in mylist]
         return sum(cko) / len(cko)
 
@@ -37,7 +37,7 @@ def main():
     app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
     window = ExampleApp()  # Создаём объект класса ExampleApp
     window.show()  # Показываем окно
-    app.exec_()  # и запускаем приложение
+    app.exec_()  # Запуск приложения
 
 if __name__ == '__main__':  
     main()
