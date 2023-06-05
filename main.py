@@ -37,7 +37,7 @@ class ExampleApp(QtWidgets.QMainWindow, design_window.Ui_MainWindow):
         return sum(cko) / len(cko)
 
     def func_G(self, x):  # Возвращяет функию g(x): x^2
-        return x**2
+        return 2**x
 
     def proizvodnai_funcG(self, x):  # Возвращяет производную функии g(x): 2 * x
         return 2 * x
